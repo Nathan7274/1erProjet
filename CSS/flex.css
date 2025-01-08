@@ -1,0 +1,28 @@
+.flexible {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.espace {
+    justify-content: space-evenly;
+}
+
+.justify-contnent-space-envenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+justify-content: space-between;
+}
+
+.centre {
+    justify-content: center;
+}
+
+input :not(:focus) :invalid {
+    background-color: crimson;
+}
+

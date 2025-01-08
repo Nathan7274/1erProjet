@@ -1,0 +1,341 @@
+body {
+  background-color: darkgray;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  iframe {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+header ul li {
+  list-style-type: none;
+  font-size: 1.2em;
+}
+
+header ul {
+  background-color: dimgrey;
+  margin: 0;
+  padding: 15px;
+}
+
+header ul li a {
+  color: ivory;
+  text-decoration: none;
+}
+
+main {
+  height: 90%;
+  margin: 0% auto;
+  text-align: center;
+}
+
+footer {
+  background-color: dimgray;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  position: unset;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+footer a {
+  color: white;
+}
+
+div {
+  text-align: center;
+}
+
+h1 {
+  color: steelblue;
+  text-decoration: underline;
+  font-size: 3em;
+  font-family: monospace;
+  text-align: center;
+}
+
+
+h2 {
+  color: black;
+  font-size: 2em;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+h3 {
+  font-family: monospace;
+}
+
+div a {
+  text-decoration: none;
+  border: 3px;
+  background-color: darkslategray;
+  border-radius: 30px;
+  padding: 1px 20px;
+  color: bisque;
+  box-shadow: 5px 5px black;
+
+}
+
+a {
+  text-decoration: none;
+  color: bisque;
+  display: block;
+  transition-duration: 1.5s;
+}
+
+main a {
+  margin: 10px 100px;
+}
+
+.l:hover {
+  transform: scale(1.2);
+}
+
+main a:hover {
+  background-color: aliceblue;
+  color: black;
+
+}
+
+div img {
+  width: 90%;
+}
+
+img {
+  width: 50%;
+  border: 2px black;
+  border-radius: 20px;
+}
+
+.imageIcon {
+  height: 40px;
+  border-radius: 0%;
+}
+
+.imageIcon:hover {
+  transform: rotate(360deg);
+  transition-timing-function: linear;
+  transition: transform 2s;
+}
+
+table,
+td {
+  border: 2px solid black;
+  text-align: center;
+}
+
+th {
+  border: 2px solid black;
+  color: blue;
+}
+
+p {
+  line-height: 15px;
+}
+
+th,
+td {
+  padding: 10px 20px;
+}
+
+.container {
+  border: 4px ridge black;
+  margin-bottom: 50px;
+  margin: 20px 20px;
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  background-color: slategray;
+}
+
+.image {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+input {
+  font-size: 2.5em;
+  border-radius: 50px;
+  border: 1px solid red;
+  padding: 5px 25px;
+  width: 50%;
+
+}
+
+label {
+  font-size: 2em;
+}
+
+.image2 {
+  max-width: 100px;
+  border-radius: 0;
+  transition-duration: 2s;
+}
+
+button {
+  border-radius: 100px;
+  width: 75px;
+  height: 50px;
+  margin-top: 7.5px;
+  transition-duration: 1s;
+  transition-delay: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+button:hover~.image2 {
+  transform: translate(500px);
+}
+
+.email:not(:focus):invalid {
+  background-color: red;
+  border-color: black;
+  animation: shake 0.5s;
+}
+
+.email:focus {
+  border-color: blue;
+  outline: blue;
+}
+
+
+@keyframes shake {
+  10% {
+    transform: translateX(2%);
+  }
+
+  20% {
+    transform: translateX(-2%);
+  }
+
+  30% {
+    transform: translateX(2%);
+  }
+
+  40% {
+    transform: translateX(-2%);
+  }
+
+  50% {
+    transform: translateX(2%);
+  }
+
+  60% {
+    transform: translateX(-2%);
+  }
+
+  70% {
+    transform: translateX(2%);
+  }
+
+  80% {
+    transform: translateX(-2%);
+  }
+
+  90% {
+    transform: translateX(2%);
+  }
+}
+
+.imageProfil {
+  width: 75px;
+  opacity: 0;
+  animation: photoProfile 1s 3s forwards;
+}
+
+@keyframes photoProfile {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+.load {
+  padding-top: 5px;
+  height: 25px;
+  width: 750px;
+  border: 1px black solid;
+  margin-left: 450px;
+  margin-right: 450px;
+  margin-top: 15px;
+  animation: barCache 0s 3s forwards;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .load {
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .progre-bar {
+    height: 10px; 
+  }
+}
+
+.progre-bar {
+  transform: scaleX(0);
+  transform-origin: 0% 50%;
+  animation: colorBarre 3s forwards, barCache 0s 3s forwards;
+}
+
+@keyframes barCache {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes colorBarre {
+  0% {
+    transform: scaleX(0);
+    background-color: rgb(97, 199, 88);
+  }
+
+  25% {
+    transform: scaleX(0.25);
+    background-color: rgb(60, 18, 214);
+  }
+
+  50% {
+    transform: scaleX(0.50);
+    background-color: rgb(170, 110, 20);
+  }
+
+  75% {
+    transform: scaleX(0.75);
+    background-color: rgb(113, 235, 235);
+  }
+
+  100% {
+    transform: scaleX(1);
+    background-color: rgb(235, 91, 211);
+
+  }
+}
+
+.progre-bar {
+  background-color: green;
+  height: 20px;
+}
+
+.load-btn:active+.load>.progre-bar {
+  transform: scaleX(1);
+  transition: transform 5000ms;
+}
